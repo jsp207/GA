@@ -1,0 +1,27 @@
+<script>
+    try {
+        dataLayer.push({
+            'event' : 'checkout',
+            'ecommerce' : {
+                'checkout' : {
+                    'actionField' : {
+                        'step' : 1,
+                        'option' : '신용카드^아이포인트^S머니'   //결제수단정보, (이 다음 Step가 없는 경우에만 option 노출), 엑셀파일 "option_checkout" 컬럼 참조. 내용 주의
+                    },
+                    'products' : [{
+                        'id' : '123456789',        //주문번호 (String)
+                        'name' : '',               //도서명
+                        'price' : 80000,           //상품가격
+                        'brand' : '',              //상품브랜드 : 1순위 브랜드명, 2순위 판매자명 (데이터 없을경우 공백)
+                        'category' : '',           //카테고리 : 대카테고리^중카테고리^소카테고리 (띄어쓰기없음)(중간에 ^ 주의)
+                        'variant' : '',            //상품옵션 : 옵션1^옵션2^옵션3 (띄어쓰기없음)(데이터 없을경우 공백)(중간에 ^ 주의)
+                        'quantity' : 3             //구매수량 : 1 OR 2...
+                    }]
+                }
+            }
+        });
+    } catch(err) {
+    
+    }
+</script>
+

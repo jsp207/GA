@@ -1,0 +1,19 @@
+<script>
+    dataLayer.push({
+        'event' : 'addToCart',
+        'ecommerce' : {
+            'currencyCode': 'KRW',
+            'add' : {
+                'products'  : [{
+                    'id'    : '123456',     //상품코드 : prdNo (String) 
+                    'name'  : '',           //도서명
+                    'price' : 193300,       //도서가격 : 193300 
+                    'brand' : '',              //출판사명 (데이터 없을경우 공백)
+                    'category' : '',        //카테고리 : 대카테고리^중카테고리^소카테고리 (띄어쓰기없음)(중간에 ^ 주의)
+                    'variant'  : '',        //상품옵션 : 옵션1^옵션2^옵션3 (띄어쓰기없음)(데이터 없을경우 공백)(중간에 ^ 주의)
+                    'quantity' : 1          //구매수량 : 1 OR 2... 
+                }]
+            }
+        }
+    });
+</script>
